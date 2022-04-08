@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -108,6 +109,7 @@ body {
 
 .about {
     text-align: center;
+    background-color:rgb(188, 163, 122);
 }
 
 .about .container-about h2 {
@@ -117,20 +119,26 @@ body {
 
 .about .container-about hr {
     width: 15%;
-    background-color: yellowgreen;
+    background-color: white;
     height: 2px;
-    border: 1px solid yellowgreen;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 .about .container-about p {
     font-family: 'Hubballi', cursive;
     font-size: 1.8em;
-
+    font-weight: 700;
+    padding-bottom: 20px;
 }
 
 /* Project styles */
 
 .project {
+    padding: 0;
+    margin: 0;
     background-color: yellowgreen;
     text-align: center;
 }
@@ -140,6 +148,9 @@ body {
     background-color: black;
     height: 2px;
     border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 .project .container-project h2 {
@@ -151,7 +162,16 @@ body {
 
 /* Contact styles */
 
+.contact {
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .contact h2 {
+    padding: 0;
+    margin: 0;
     font-family: 'Sansita Swashed', cursive;
     padding-top: 30px;
     text-align: center;
@@ -162,21 +182,48 @@ body {
     background-color: yellowgreen;
     height: 2px;
     border: 1px solid yellowgreen;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 .form-contact {
-    border: 3px solid black;
+    border: 10px solid rgb(188, 163, 122);
     width: 40%;
     margin-left: 30%;
     margin-top: 50px;
     padding: 10px;
-    background-color: rgb(51, 47, 47);
+    background-color: rgb(188, 163, 122);
 }
 
 .form-contact .text-form {
-    color: yellowgreen;
+    color: black;
+    font-family: 'Hubballi', cursive;
+    margin-bottom: 10px;
 }
 
 .form-contact #name-company, #message {
     background-color: yellowgreen;
+    outline-style: none;
+    border: 2px solid rgb(51, 47, 47);
+}
+
+.form-contact #name-company {
+    height: 35px;
+}
+
+.form-contact #message:focus {
+    background-color: rgb(158, 204, 109);
+}
+
+.form-contact #name-company:focus {
+    background-color: rgb(158, 204, 109);
+}
+
+.form-contact #message:hover {
+    background-color: rgb(158, 204, 109);
+}
+
+.form-contact #name-company:hover {
+    background-color: rgb(158, 204, 109);
 }
