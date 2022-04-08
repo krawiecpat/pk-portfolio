@@ -132,6 +132,8 @@ body {
     font-size: 1.8em;
     font-weight: 700;
     padding-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 /* Project styles */
@@ -167,6 +169,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-bottom: 30px;
 }
 
 .contact h2 {
@@ -190,7 +193,8 @@ body {
 .form-contact {
     border: 10px solid rgb(188, 163, 122);
     width: 40%;
-    margin-left: 30%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     padding: 10px;
     background-color: rgb(188, 163, 122);
@@ -226,4 +230,16 @@ body {
 
 .form-contact #name-company:hover {
     background-color: rgb(158, 204, 109);
+}
+
+/* Footer styles */
+
+.end-portfolio {
+    height: 120px;
+    background-color:rgb(188, 163, 122) ;
+}
+
+.end-portfolio .social-media {
+    display: flex;
+    justify-content: flex-end;
 }
